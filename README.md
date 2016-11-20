@@ -2,7 +2,15 @@
 
 ## Live Templates
 
+### Installation
+
+Linux: `~.AndroidStudio<version>\config\templates`
+
 ## File Templates
+
+### Installation
+
+Linux: `~.AndroidStudio<version>\config\fileTemplates`
 
 ## ADT Templates
 
