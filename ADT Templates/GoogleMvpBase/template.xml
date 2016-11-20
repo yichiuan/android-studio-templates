@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<template
+    format="1"
+    revision="1"
+    name="MVP Base"
+    minApi="7"
+    minBuildApi="14"
+    description="Creates Google MVP Base">
+
+    <category value="Google MVP" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+</template>
