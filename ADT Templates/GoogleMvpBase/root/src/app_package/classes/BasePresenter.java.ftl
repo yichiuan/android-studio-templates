@@ -3,17 +3,18 @@ package ${packageName};
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
 
+
 public class BasePresenter implements MvpPresenter {
 
-    private CompositeSubscription compositeSubscription = new CompositeSubscription();
+    private final CompositeSubscription compositeSubscription = new CompositeSubscription();
 
     @Override
-    public void start() {
+    public void subscribe() {
 
     }
 
     @Override
-    public void stop() {
+    public void unsubscribe() {
         compositeSubscription.clear();
     }
 

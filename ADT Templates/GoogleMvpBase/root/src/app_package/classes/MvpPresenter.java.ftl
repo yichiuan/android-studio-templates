@@ -2,7 +2,7 @@ package ${packageName};
 
 
 public interface MvpPresenter {
-    void start();
+    void subscribe();
 
-    void stop();
+    void unsubscribe();
 }

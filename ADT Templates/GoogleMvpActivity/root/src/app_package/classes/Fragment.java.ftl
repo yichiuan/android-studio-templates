@@ -1,6 +1,7 @@
 package ${packageName};
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 
 
 public class ${fragmentClass} extends Fragment implements ${contractClass}.View {
+    
     private ${contractClass}.Presenter presenter;
 
     public static ${fragmentClass} newInstance() {
@@ -34,8 +36,7 @@ public class ${fragmentClass} extends Fragment implements ${contractClass}.View 
     }
 
     @Override
-    public void setPresenter(${contractClass}.Presenter presenter) {
+    public void setPresenter(@NonNull ${contractClass}.Presenter presenter) {
         this.presenter = presenter;
     }
-
 }
